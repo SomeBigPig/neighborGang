@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/sportTab/sport/sport",
+    "pages/sportTab/runRecord/runRecord",
+    "pages/sportTab/runActivity/runActivity",
+    "pages/sportTab/teamSelect/teamSelect",
+    "pages/lifeTab/life/life",
+    "pages/lifeTab/notice/notice",
+    "pages/lifeTab/task/task",
+    "pages/lifeTab/shopMall/shopMall",
+    "pages/lifeTab/goodsDetail/goodsDetail",
+    "pages/lifeTab/shopCart/shopCart",
+    "pages/sportTab/activityLaunch/activityLaunch",
+    "pages/personalTab/personal/personal",
+    "pages/personalTab/mySport/mySport",
+    "pages/personalTab/myIntegration/myIntegration",
+    "pages/personalTab/myOrder/myOrder",
+    "pages/personalTab/suggestion/suggestion",
+    "pages/personalTab/teamShare/teamShare",
+    "pages/personalTab/myShare/myShare",
+    "pages/personalTab/aboutUs/aboutUs",
+    "pages/personalTab/information/information"
+  ],
+  "tabBar": {
+    "color": "#8C8C8C",
+    "selectedColor": "#4CAF50",
+    "backgroundColor": "#FFFFFF",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/sportTab/sport/sport",
+        "text": "跑团",
+        "iconPath": "images/common/sport.png",
+        "selectedIconPath": "images/common/sport_selected.png"
+      }, {
+        "pagePath": "pages/lifeTab/life/life",
+        "text": "邻居生活",
+        "iconPath": "images/common/life.png",
+        "selectedIconPath": "images/common/life_selected.png"
+      }, {
+        "pagePath": "pages/personalTab/personal/personal",
+        "text": "我的",
+        "iconPath": "images/common/personal.png",
+        "selectedIconPath": "images/common/personal_selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4EB052",
+    "navigationBarTitleText": "邻居邦",
+    "navigationBarTextStyle": "white"
+  }
+}

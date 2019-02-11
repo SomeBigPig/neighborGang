@@ -1,0 +1,57 @@
+<!--pages/sportTab/sport/sport.wxml-->
+<view class="wrap">
+
+    <!-- 头部 -->
+    <view class="header">
+        <view class="userinfo">
+            <image src="/images/demo/avatar.jpg" />
+            <text class="nickName">汗菜锅锅</text>
+        </view>
+        <view class="tabs flex-row">
+            <view class="tab selected">运动</view>
+            <view class="tab">排行榜</view>
+            <view class="tab">跑团介绍</view>
+        </view>
+    </view>
+
+    <!-- 我的运动 -->
+    <view class="banner">
+        <view class="title">我的运动</view>
+        <swiper class="swiper" autoplay="{{true}}" indicator-dots="{{true}}" indicator-active-color="#FFFFFF" circular="{{true}}">
+            <swiper-item class="swiperItem sport flex-center">
+                <view class="total">
+                    <text>518</text>
+                    <text>公里</text>
+                </view>
+            </swiper-item>
+            <swiper-item class="swiperItem sport flex-center">
+                <view class="total">
+                    <text>518</text>
+                    <text>公里</text>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <!-- 活动 -->
+    <view class="activities">
+        <view class="title">跑团活动</view>
+        <block wx:for="{{[1,2,3,4,5]}}" wx:key="unique">
+            <view class="activity">
+                <image class="poster" src="/images/demo/0.jpg" />
+                <view class="desc">
+                    <text class="title">【518期】 梅溪湖联合聚跑集结号</text>
+                    <text class="team">梅溪湖跑团: 梅溪湖公园</text>
+                    <view class="sign">
+                        <view class="status playing">报名中</view>
+                        <view class="tip">
+                            <text class="time">2019年1月9号 星期三 19:00</text>
+                            <text>已报名: 6人</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+
+</view>

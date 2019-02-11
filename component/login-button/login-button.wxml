@@ -1,0 +1,2 @@
+<!--component/login-button/login-button.wxml-->
+<button wx:if="hasUserInfo" class="loginBtn" open-type='getUserInfo' bind:getuserinfo="loginHandle"></button>
