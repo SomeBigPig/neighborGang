@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tab: 1,
   },
 
   /**
@@ -29,6 +29,14 @@ Page({
    */
   onShow: function () {
 
+  },
+
+  // 切换选项卡
+  changeTab: function(e) {
+    let index = e.currentTarget.dataset.index
+    this.setData({
+      tab: index
+    })
   },
 
   /**
