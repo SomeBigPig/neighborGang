@@ -39,6 +39,13 @@ Page({
     })
   },
 
+  // 发起活动
+  toActivityLaunch: function() {
+    wx.navigateTo({
+      url: '/pages/sportTab/activityLaunch/activityLaunch',
+    });
+  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

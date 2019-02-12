@@ -1,1 +1,144 @@
 /* pages/sportTab/runActivity/runActivity.wxss */
+
+.info {
+    width: 710rpx;
+    padding: 0 20rpx;
+    padding-top: 10rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.info .item {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #1A1A1A;
+}
+
+.item text:nth-child(2) {
+    margin-left: 8rpx;
+}
+
+.sign {
+    width: 710rpx;
+    padding: 0 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign .total {
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 32rpx;
+    color: #1A1A1A;
+}
+
+.sign .members {
+    width: 100%;
+    margin-top: 10rpx;
+    align-items: flex-start;
+}
+
+.members .member {
+    width: 100%;
+    height: 90rpx;
+}
+
+.member image {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 70rpx;
+}
+
+.member text {
+    color: #1A1A1A;
+    font-size: 28rpx;
+    margin-left: 30rpx;
+}
+
+
+.situation {
+    width: 710rpx;
+    padding: 0 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.situation text {
+    width: 100%;
+    height: 60rpx;
+    color: #1A1A1A;
+    font-size: 28rpx;
+    line-height: 60rpx;
+}
+
+.situation .scroll {
+    margin-top: 10rpx;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+}
+
+.photos .photo {
+    width: 230rpx;
+    height: 160rpx;
+    border-radius: 10rpx;
+    margin-left: 10rpx;
+}
+
+.photo:nth-child(1) {
+    margin-left: 0;
+}
+
+.photo image {
+    width: 230rpx;
+    height: 160rpx;
+    border-radius: 10rpx;
+}
+
+
+.operations {
+    width: 710rpx;
+    padding: 0 20rpx;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 30rpx;
+}
+
+.operations button {
+    height: 70rpx;
+    border-radius: 10rpx;
+    color: #FFF;
+    font-size: 30rpx;
+    line-height: 70rpx;
+    text-align: center;
+}
+
+.operations button::after {
+    border: none;
+}
+
+.operations .left {
+    width: 200rpx;
+    background-color: #FF9901;
+}
+
+.operations .right {
+    width: 480rpx;
+    background-color: #4CAF50;
+}
+
+.operations .signed {
+    width: 480rpx;
+    background-color: #B3B3B3;
+}
+
+.operations .share {
+    width: 710rpx;
+    background-color: #FF9901;
+}

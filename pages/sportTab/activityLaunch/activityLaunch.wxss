@@ -1,1 +1,82 @@
 /* pages/sportTab/activityLaunch/activityLaunch.wxss */
+
+.form {
+    position: relative;
+    top: 40rpx;
+    left: 0;
+}
+
+.item {
+    width: 750rpx;
+    height: 110rpx;
+    color: #1A1A1A;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+}
+
+.item label {
+    width: 120rpx;
+    color: #1A1A1A;
+    font-size: 28rpx;
+    text-align: left;
+    margin-left: 20rpx;
+}
+
+.title {
+    width: 500rpx;
+    padding: 0 10rpx;
+    height: 70rpx;
+    border-radius: 6rpx;
+    border: 2rpx #E0E0DE solid;
+    background-color: #F8F8F8;
+    margin-left: 20rpx;
+}
+
+.time {
+    width: 200rpx;
+    height: 70rpx;
+    border-radius: 6rpx;
+    border: 2rpx #E0E0DE solid;
+    background-color: #F8F8F8;
+    margin-left: 20rpx;
+    line-height: 70rpx;
+    text-align: center;
+}
+
+.time:nth-last-child(1) {
+    width: 150rpx;
+    margin-left: 20rpx;
+}
+
+.place {
+    width: 400rpx;
+    padding: 0 10rpx;
+    height: 70rpx;
+    border-radius: 6rpx;
+    border: 2rpx #E0E0DE solid;
+    background-color: #F8F8F8;
+    margin-left: 20rpx;
+}
+
+.mapbtn {
+    margin-left: 20rpx;
+    color: #a3a3a3;
+}
+
+.map {
+    width: 750rpx;
+    height: 500rpx;
+}
+
+.submit {
+    width: 710rpx;
+    height: 70rpx;
+    border-radius: 10rpx;
+    background-color: #4CAF50;
+    color: #FFF;
+    font-size: 30rpx;
+    position: fixed;
+    bottom: 30rpx;
+    left: 20rpx;
+}

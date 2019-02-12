@@ -1,5 +1,6 @@
 // pages/sportTab/activityLaunch/activityLaunch.js
 // 跑团-活动发起
+const util = require('../../../utils/util')
 
 Page({
 
@@ -7,7 +8,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    date: '2018-12-8',
+    time: '19:22',
+    startDate: '',
+    startTime: '',
+    address: '',
   },
 
   /**
@@ -15,6 +20,19 @@ Page({
    */
   onLoad: function (options) {
 
+    this.initPicker()
+  },
+
+  // 初始化时间控件
+  initPicker: function() {
+    let date = util.formatTime('' , 'YYYY-MM-DD')
+    let time = util.formatTime('' , 'HH:ii')
+    this.setData({
+      date: date,
+      time: time,
+      startDate: date,
+      startTime: time
+    })
   },
 
   /**
@@ -29,6 +47,42 @@ Page({
    */
   onShow: function () {
 
+  },
+
+  // 活动发起
+  submitHandle: function(e) {
+    let form = e.detail.value
+    console.log(form)
+  },
+
+  // 地图点击事件
+  chooseMap: function() {
+    let that = this
+    wx.chooseLocation({
+      success: function(res) {
+        that.setData({
+          address: res.name
+        });
+        console.log(res)
+      },
+      fail: function(err) {
+        console.log(err)
+      }
+    });
+  },
+
+  // 选择日期
+  dateChangeHandle: function(e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+
+  // 选择时间
+  timeChangeHandle: function(e) {
+    this.setData({
+      time: e.detail.value
+    })
   },
 
   /**

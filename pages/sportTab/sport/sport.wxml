@@ -52,6 +52,8 @@
                 </view>
             </block>
         </view>
+        <!-- 发起活动 -->
+        <view class="launch flex-center" bind:tap="toActivityLaunch">发起</view>
     </block>
 
     <block wx:if="{{tab == 2}}">
@@ -73,5 +75,9 @@
                 </view>
             </block>
         </view>
+    </block>
+
+    <block wx:if="{{tab == 3}}">
+        <!-- 团章介绍 -->
     </block>
 </view>

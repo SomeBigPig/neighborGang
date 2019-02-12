@@ -31,6 +31,16 @@ Page({
 
   },
 
+  // 立即报名
+  signHandler: function() {
+
+  },
+
+  // 取消报名
+  cancalHandler: function() {
+    
+  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

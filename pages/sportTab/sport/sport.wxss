@@ -79,6 +79,18 @@
     margin-left: 8rpx;
 }
 
+.launch {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100rpx;
+    background-color: #4EB052;
+    color: #FFF;
+    font-size: 30rpx;
+    position: fixed;
+    right: 26rpx;
+    bottom: 30rpx;
+}
+
 
 /** 排行榜 */
 .ranks {

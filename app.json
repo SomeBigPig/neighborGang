@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/sportTab/runActivity/runActivity",
     "pages/sportTab/sport/sport",
     "pages/sportTab/runRecord/runRecord",
-    "pages/sportTab/runActivity/runActivity",
+    "pages/sportTab/activityLaunch/activityLaunch",
     "pages/sportTab/teamSelect/teamSelect",
     "pages/lifeTab/life/life",
     "pages/lifeTab/notice/notice",
@@ -10,7 +11,6 @@
     "pages/lifeTab/shopMall/shopMall",
     "pages/lifeTab/goodsDetail/goodsDetail",
     "pages/lifeTab/shopCart/shopCart",
-    "pages/sportTab/activityLaunch/activityLaunch",
     "pages/personalTab/personal/personal",
     "pages/personalTab/mySport/mySport",
     "pages/personalTab/myIntegration/myIntegration",

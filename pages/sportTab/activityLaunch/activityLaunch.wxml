@@ -1,2 +1,32 @@
 <!--pages/sportTab/activityLaunch/activityLaunch.wxml-->
-<text>pages/sportTab/activityLaunch/activityLaunch.wxml</text>
+<view class="wrap">
+
+    <form class="form flex-column" bindsubmit="submitHandle">
+        <view class="item">
+            <label for="title">活动标题</label>
+            <input id="title" class="title" name="title" maxlength="30" />
+        </view>
+        <view class="item">
+            <label for="time">集合时间</label>
+            <picker mode="date" class="time" name="date" value="{{date}}" start="{{startDate}}" bindchange="dateChangeHandle">
+                <view class="picker">
+                    {{date}}
+                </view>
+            </picker>
+            <picker mode="time" class="time" name="time" value="{{time}}" start="{{startTime}}" bindchange="timeChangeHandle">
+                <view class="picker">
+                    {{time}}
+                </view>
+            </picker>
+        </view>
+        <view class="item">
+            <label for="place">集合地点</label>
+            <input id="place" class="place" name="place" value="{{address}}" maxlength="30" />
+            <view class="mapbtn" bind:tap="chooseMap">地图选取</view>
+        </view>
+
+        <button class="submit flex-center" form-type="submit">确认发起</button>
+    </form>
+
+</view>
+
