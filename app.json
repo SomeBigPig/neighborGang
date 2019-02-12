@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/sportTab/runActivity/runActivity",
+    "pages/lifeTab/notice/notice",
+    "pages/lifeTab/life/life",
     "pages/sportTab/sport/sport",
     "pages/sportTab/runRecord/runRecord",
+    "pages/sportTab/runActivity/runActivity",
     "pages/sportTab/activityLaunch/activityLaunch",
     "pages/sportTab/teamSelect/teamSelect",
-    "pages/lifeTab/life/life",
-    "pages/lifeTab/notice/notice",
     "pages/lifeTab/task/task",
     "pages/lifeTab/shopMall/shopMall",
     "pages/lifeTab/goodsDetail/goodsDetail",

@@ -72,7 +72,7 @@ page {
   white-space: nowrap;
 }
 
-.text_ellipsis {
+.text_ellipsis_line {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;

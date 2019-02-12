@@ -31,6 +31,27 @@ Page({
 
   },
 
+  // 公告栏
+  toNotice: function() {
+    wx.navigateTo({
+      url: '/pages/lifeTab/notice/notice',
+    });
+  },
+
+  // 居家服务
+  toTask: function() {
+    wx.navigateTo({
+      url: '/pages/lifeTab/task/task',
+    });
+  },
+
+  // 公告
+  toShopMall: function() {
+    wx.navigateTo({
+      url: '/pages/lifeTab/shopMall/shopMall',
+    });
+  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

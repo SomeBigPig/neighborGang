@@ -1,1 +1,96 @@
 /* pages/lifeTab/life/life.wxss */
+.tabs {
+  width: 750rpx;
+  justify-content: space-around;
+  padding: 30rpx 0;
+  background-color: #4DB052;
+}
+
+.tab {
+  height: 100rpx;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab image {
+  width: 44rpx;
+  height: 48rpx;
+}
+
+.tab text {
+  color: #FFF;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+
+.goods {
+  width: 750rpx;
+}
+
+.good {
+  width: 710rpx;
+  padding: 10rpx 20rpx;
+  border-bottom: 2rpx #E6E6E6 solid;
+  justify-content: space-between;
+}
+
+.good .poster {
+  width: 260rpx;
+  height: 146rpx;
+}
+
+.good .goodInfo {
+  width: 440rpx;
+  align-items: flex-start;
+}
+
+.goodInfo text:nth-child(1) {
+  color: #1A1A1A;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+
+.goodInfo .remainTime {
+  color: #FF9901;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+
+.goodInfo .footer {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.footer text:nth-child(1) {
+  height: 44rpx;
+  color: #FF9901;
+  font-size: 28rpx;
+  line-height: 44rpx;
+}
+
+.footer text:nth-child(2) {
+  height: 44rpx;
+  color: #808080;
+  font-size: 22rpx;
+  line-height: 40rpx;
+  text-decoration: line-through;
+  margin-left: 8rpx;
+}
+
+.footer text:nth-child(3) {
+  height: 44rpx;
+  color: #62BA67;
+  font-size: 24rpx;
+  line-height: 50rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+

@@ -1,1 +1,62 @@
 /* pages/lifeTab/notice/notice.wxss */
+
+.notices {
+  width: 750rpx;
+  padding-bottom: 200rpx;
+}
+
+.notice {
+  width: 710rpx;
+  padding: 20rpx 20rpx;
+  border-bottom: 1rpx#F2F2F2 solid;
+  justify-content: flex-start;
+}
+
+.notice .title {
+  width: 100%;
+  color: #1A1A1A;
+  font-size: 28rpx;
+}
+
+.notice .photos {
+  width: 710rpx;
+  flex-wrap: wrap;
+}
+
+.photos image {
+  width: 230rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+}
+
+.photos image:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.notice .owner {
+  width: 100%;
+  color: #808080;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.owner image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+}
+
+.owner text:nth-child(2) {
+  margin-left: 20rpx;
+}
+
+.owner text:nth-last-child(1) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

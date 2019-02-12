@@ -1,2 +1,38 @@
 <!--pages/lifeTab/life/life.wxml-->
-<text>pages/lifeTab/life/life.wxml</text>
+<view class="wrap">
+
+  <!-- 选项卡 -->
+  <view class="tabs flex-row">
+    <view class="tab" bind:tap="toNotice">
+      <image src="/images/life/notice.png" />
+      <text>公告栏</text>
+    </view>
+    <view class="tab" bind:tap="toTask">
+      <image src="/images/life/task.png" />
+      <text>居家服务</text>
+    </view>
+    <view class="tab" bind:tap="toShopMall">
+      <image src="/images/life/shop.png" />
+      <text>业主店铺</text>
+    </view>
+  </view>
+
+  <!-- 商品 -->
+  <view class="goods flex-column">
+    <block wx:for="{{[1,2,3,4,5,6]}}">
+      <view class="good flex-row">
+        <image class="poster" src="/images/demo/0.jpg" />
+        <view class="goodInfo flex-column">
+          <text class="text_ellipsis_line">智能跑鞋23K爱神的箭拉开基督教卡合适的话很多啊谁说</text>
+          <text class="remainTime">剩余时间：24:30:00</text>
+          <view class="footer flex-row">
+            <text>3600积分</text>
+            <text>￥500.00</text>
+            <text>220已购</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>

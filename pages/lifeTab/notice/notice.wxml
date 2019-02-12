@@ -1,2 +1,24 @@
 <!--pages/lifeTab/notice/notice.wxml-->
-<text>pages/lifeTab/notice/notice.wxml</text>
+<view class="wrap">
+  
+  <view class="notices flex-column">
+    <block wx:for="{{[1,2,3,4,5]}}" wx:key="unique">
+      <view class="notice flex-column">
+        <view class="title">按时可见度就爱上了的经历爱上降低还是的啦资料</view>
+        <view class="photos flex-row">
+          <block wx:for="{{[1,2,3,4,5]}}" wx:key="unique">
+            <image src="/images/demo/0.jpg" />
+          </block>
+        </view>
+        <view class="owner flex-row">
+          <image src="/images/demo/avatar.jpg" />
+          <text>汗菜锅锅</text>
+          <text>2019年2月10日</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  
+
+</view>
