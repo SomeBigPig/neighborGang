@@ -8,8 +8,8 @@
         <block wx:for="{{photos}}" wx:key="unique">
             <image mode="aspectFill" class="photo" src="{{item}}" data-url="{{item}}" bind:tap="previewImg" />
         </block>
-        <view class="add flex-center">
-            <image src="/images/life/addNoticePhoto.png" bind:tap="addPhoto"/>
+        <view class="add flex-center" bind:tap="addPhoto">
+            <image src="/images/life/addNoticePhoto.png"/>
         </view>
     </view>
 
