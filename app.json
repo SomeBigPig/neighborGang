@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/personalTab/personal/personal",
     "pages/lifeTab/life/life",
     "pages/lifeTab/notice/notice",
+    "pages/lifeTab/noticeLaunch/noticeLaunch",
     "pages/sportTab/sport/sport",
     "pages/sportTab/runRecord/runRecord",
     "pages/sportTab/runActivity/runActivity",
@@ -11,7 +13,6 @@
     "pages/lifeTab/shopMall/shopMall",
     "pages/lifeTab/goodsDetail/goodsDetail",
     "pages/lifeTab/shopCart/shopCart",
-    "pages/personalTab/personal/personal",
     "pages/personalTab/mySport/mySport",
     "pages/personalTab/myIntegration/myIntegration",
     "pages/personalTab/myOrder/myOrder",
@@ -20,7 +21,6 @@
     "pages/personalTab/myShare/myShare",
     "pages/personalTab/aboutUs/aboutUs",
     "pages/personalTab/information/information",
-    "pages/lifeTab/noticeLaunch/noticeLaunch",
     "pages/lifeTab/shopLaunch/shopLaunch"
   ],
   "tabBar": {
@@ -55,5 +55,10 @@
     "navigationBarBackgroundColor": "#4EB052",
     "navigationBarTitleText": "邻居邦",
     "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位效果展示"
+    }
   }
 }

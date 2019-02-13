@@ -1,2 +1,41 @@
 <!--pages/personalTab/personal/personal.wxml-->
-<text>pages/personalTab/personal/personal.wxml</text>
+<view class="wrap">
+
+    <view class="header">
+        <image class="avatar" src="/images/demo/avatar.jpg" />
+        <view class="right flex-column">
+            <text>汗菜</text>
+            <text>我的积分：230</text>
+        </view>
+        <image class="arrow" src="/images/personal/arrow.png" />
+    </view>
+
+    <!-- 菜单 -->
+    <view class="menus flex-column">
+        <view class="menu" bind:tap="toMySport">
+            <text>我的运动</text>
+            <image src="/images/personal/arrow.png" />
+        </view>
+        <view class="menu" bind:tap="toMyOrder">
+            <text>我的订单</text>
+            <image src="/images/personal/arrow.png" />
+        </view>
+        <view class="menu" bind:tap="">
+            <text>收货地址</text>
+            <image src="/images/personal/arrow.png" />
+        </view>
+        <view class="menu" bind:tap="toTeamShare">
+            <text>邀请跑友</text>
+            <image src="/images/personal/arrow.png" />
+        </view>
+        <view class="menu" bind:tap="toSuggestion">
+            <text>意见反馈</text>
+            <image src="/images/personal/arrow.png" />
+        </view>
+        <view class="menu" bind:tap="toAboutUs">
+            <text>关于我们</text>
+            <image src="/images/personal/arrow.png" />
+        </view>
+    </view>
+
+</view>

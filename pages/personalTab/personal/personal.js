@@ -30,6 +30,41 @@ Page({
   onShow: function () {
 
   },
+  
+  // 我的运动
+  toMySport: function() {
+    wx.navigateTo({
+      url: '/pages/personalTab/mySport/mySport',
+    });
+  },
+  
+  // 我的订单
+  toMyOrder: function() {
+    wx.navigateTo({
+      url: '/pages/personalTab/myOrder/myOrder',
+    });
+  },
+  
+  // 邀请跑友
+  toTeamShare: function() {
+    wx.navigateTo({
+      url: '/pages/personalTab/teamShare/teamShare',
+    });
+  },
+  
+  // 意见反馈
+  toSuggestion: function() {
+    wx.navigateTo({
+      url: '/pages/personalTab/suggestion/suggestion',
+    });
+  },
+  
+  // 关于我们
+  toAboutUs: function() {
+    wx.navigateTo({
+      url: '/pages/personalTab/aboutUs/aboutUs',
+    });
+  },
 
   /**
    * 生命周期函数--监听页面隐藏

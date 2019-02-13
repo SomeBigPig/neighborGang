@@ -63,7 +63,7 @@
 
 .footer {
   width: 750rpx;
-  height: 110rpx;
+  height: 120rpx;
   background-color: #FFF;
   border-top: 1rpx #F2F2F2 solid;
   position: fixed;

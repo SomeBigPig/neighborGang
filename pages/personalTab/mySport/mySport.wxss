@@ -1,1 +1,20 @@
 /* pages/personalTab/mySport/mySport.wxss */
+
+.header {
+    width: 710rpx;
+    padding: 0 20rpx;
+    height: 150rpx;
+    background-color: #4DB052;
+    color: #FFF;
+    font-size: 30rpx;
+}
+
+.activities {
+    width: 750rpx;
+    padding: 0;
+}
+
+.activities .activity {
+    width: 710rpx;
+    padding: 20rpx;
+}

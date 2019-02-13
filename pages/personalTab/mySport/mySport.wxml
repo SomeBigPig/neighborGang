@@ -1,2 +1,26 @@
-<!--pages/personalTab/mySport/mySport.wxml-->
-<text>pages/personalTab/mySport/mySport.wxml</text>
+<!-- pages/personalTab/mySport/mySport.wxml -->
+<view class="wrap">
+
+    <view class="header flex-center">
+        102次活动，记录1980次美好瞬间
+    </view>
+
+    <view class="activities">
+        <block wx:for="{{[1,2,3,4,5]}}" wx:key="unique">
+            <view class="activity">
+                <image class="poster" src="/images/demo/0.jpg" />
+                <view class="desc">
+                    <text class="title">【518期】 梅溪湖联合聚跑集结号</text>
+                    <text class="team">梅溪湖跑团: 梅溪湖公园</text>
+                    <view class="sign">
+                        <view class="status ending">已结束</view>
+                        <view class="tip">
+                            <text class="time">2019年1月9号 星期三 19:00</text>
+                            <!-- <text>已报名: 6人</text> -->
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

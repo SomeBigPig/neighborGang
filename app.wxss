@@ -149,7 +149,7 @@ page {
 .activities .desc .sign {
   display: flex;
   align-items: center;
-  margin-top: 8rpx;
+  margin-top: 10rpx;
 }
 
 .desc .sign .status {
@@ -163,6 +163,11 @@ page {
   text-align: center;
 }
 
+.sign .ending {
+  border: 2rpx #808080 solid !important;
+  color: #808080 !important;
+}
+
 .desc .sign .tip {
   width: 370rpx;
   margin-left: 20rpx;
@@ -172,6 +177,6 @@ page {
   flex-direction: column;
 }
 
-.sign .tip:nth-child(2) {
+/* .sign .tip:nth-child(2) {
   margin-top: 8rpx;
-} 
+}  */

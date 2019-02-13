@@ -30,6 +30,16 @@ Page({
   onShow: function () {
 
   },
+  
+  // 查看图片
+  previewImg: function(e) {
+    let url = e.currentTarget.dataset.url
+    let photos = this.data.photos
+    wx.previewImage({
+      current: url,
+      urls: photos,
+    });
+  },
 
   // 发布公告
   toNoticeLaunch: function() {

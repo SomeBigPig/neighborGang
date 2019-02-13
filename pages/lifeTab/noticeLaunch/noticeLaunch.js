@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    notice: ''
+    notice: '',
+    photos: ['/images/demo/0.jpg', '/images/demo/1.jpg', '/images/demo/2.jpg']
   },
 
   /**
@@ -33,10 +34,14 @@ Page({
   
   // 添加公告图片
   addPhoto: function() {
+    let that = this
     wx.chooseImage({
       count: 9,
       success: (result)=>{
-        console.log(result)
+        let photos = [...that.data.photos, ...result.tempFilePaths]
+        that.setData({
+          photos
+        })
       },
       fail: ()=>{
         wx.showToast({
@@ -49,9 +54,26 @@ Page({
 
   // 输入公告
   bindNotice: function(e) {
+    if (e.detail.value.length == 140) {
+      wx.showToast({
+        title: '输入文字最多不超过140个',
+        icon: 'none',
+      });
+      return
+    }
     this.setData({
       notice: e.detail.value
     })
+  },
+
+  // 查看图片
+  previewImg: function(e) {
+    let url = e.currentTarget.dataset.url
+    let photos = this.data.photos
+    wx.previewImage({
+      current: url,
+      urls: photos,
+    });
   },
 
   /**

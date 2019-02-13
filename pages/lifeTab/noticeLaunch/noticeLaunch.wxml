@@ -2,16 +2,17 @@
 <view class="wrap">
     
     <!-- 添加公告图片 -->
-    <text class="title">添加公告图片</text>
+    <!-- <text class="title">添加公告图片</text> -->
+    <textarea class="notice" value="{{notice}}" placeholder="发布公告内容..." auto-height bindinput="bindNotice" />
     <view class="photos">
-        <block wx:for="{{[1,2]}}">
-            <image class="photo" src="/images/demo/0.jpg" />>
+        <block wx:for="{{photos}}" wx:key="unique">
+            <image mode="aspectFill" class="photo" src="{{item}}" data-url="{{item}}" bind:tap="previewImg" />
         </block>
         <view class="add flex-center">
             <image src="/images/life/addNoticePhoto.png" bind:tap="addPhoto"/>
         </view>
     </view>
 
-    <input class="notice" value="{{notice}}" placeholder="公告内容" bind:change="bindNotice" />
+    <button class="launch" bind:tap="launchNotice">确认发布</button>
 
 </view>

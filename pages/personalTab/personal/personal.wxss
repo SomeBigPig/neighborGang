@@ -1,1 +1,68 @@
 /* pages/personalTab/personal/personal.wxss */
+
+.header {
+    width: 710rpx;
+    padding: 0 20rpx;
+    height: 150rpx;
+    background-color: #4DB052;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.header .avatar {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 80rpx;
+}
+
+.right {
+    align-items: flex-start;
+    margin-left: 20rpx;
+}
+
+.right text:nth-child(1) {
+    height: 40rpx;
+    color: #FFF;
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+
+.right text:nth-child(2) {
+    height: 30rpx;
+    color: #FFF;
+    font-size: 24rpx;
+    line-height: 30rpx;
+}
+
+.arrow {
+    width: 16rpx;
+    height: 30rpx;
+    margin-top: -12rpx;
+    position: absolute;
+    top: 50%;
+    right: 20rpx;
+}
+
+
+.menu {
+    width: 710rpx;
+    height: 100rpx;
+    padding: 0 20rpx;
+    border-bottom: 1rpx #E6E6E6 solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu text {
+    color: #1A1A1A;
+    font-size: 30rpx;
+}
+
+.menu image {
+    width: 16rpx;
+    height: 30rpx;
+}

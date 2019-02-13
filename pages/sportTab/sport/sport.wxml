@@ -36,7 +36,7 @@
         <view class="activities">
             <view class="title">跑团活动</view>
             <block wx:for="{{[1,2,3,4,5]}}" wx:key="unique">
-                <view class="activity">
+                <view class="activity" bind:tap="toRunActivity">
                     <image class="poster" src="/images/demo/0.jpg" />
                     <view class="desc">
                         <text class="title">【518期】 梅溪湖联合聚跑集结号</text>

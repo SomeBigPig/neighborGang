@@ -1,16 +1,25 @@
 /* pages/lifeTab/noticeLaunch/noticeLaunch.wxss */
 
-.title {
+/* .title {
     height: 60rpx;
     color: #1A1A1A;
     font-size: 28rpx;
     line-height: 70rpx;
-    margin-right: 20rpx;
+    margin-left: 50rpx;
+} */
+
+.notice {
+    width: 650rpx;
+    height: 0;
+    min-height: 120rpx;
+    color: #1A1A1A;
+    font-size: 28rpx;
+    padding: 50rpx 0 0 50rpx;
 }
 
 .photos {
-    width: 710rpx;
-    padding: 0 20rpx;
+    width: 650rpx;
+    padding: 0 50rpx;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,4 +28,42 @@
 .photo {
     width: 200rpx;
     height: 200rpx;
+    border-radius: 10rpx;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+}
+
+/* .photo:nth-child(3n+1) {
+    margin-left: 0 !important;
+} */
+.photo:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.add {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10rpx;
+    margin-top: 20rpx;
+    background-color: #808080;
+}
+
+.add image {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+
+.launch {
+  width: 710rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  background-color: #4CAF50;
+  color: #FFF;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 30rpx;
+  left: 20rpx;
 }

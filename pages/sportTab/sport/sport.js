@@ -46,6 +46,13 @@ Page({
     });
   },
 
+  // 活动详情
+  toRunActivity: function() {
+    wx.navigateTo({
+      url: '/pages/sportTab/runActivity/runActivity',
+    });
+  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

@@ -7,7 +7,7 @@
         <view class="title">按时可见度就爱上了的经历爱上降低还是的啦资料</view>
         <view class="photos flex-row">
           <block wx:for="{{[1,2,3,4,5]}}" wx:key="unique">
-            <image mode="aspectFill" src="/images/demo/0.jpg" bind:tap="previewImg"/>
+            <image mode="aspectFill" src="/images/demo/0.jpg" data-url="{{item}}" bind:tap="previewImg"/>
           </block>
         </view>
         <view class="owner flex-row">
