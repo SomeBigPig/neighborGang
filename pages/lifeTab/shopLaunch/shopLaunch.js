@@ -1,5 +1,5 @@
-// pages/lifeTab/notice/notice.js
-// 邻居生活-公告栏
+// pages/lifeTab/shopLaunch/shopLaunch.js
+// 邻居生活-业主店铺-发布店铺信息
 
 Page({
 
@@ -29,13 +29,6 @@ Page({
    */
   onShow: function () {
 
-  },
-
-  // 发布公告
-  toNoticeLaunch: function() {
-    wx.navigateTo({
-      url: '/pages/lifeTab/noticeLaunch/noticeLaunch',
-    });
   },
 
   /**

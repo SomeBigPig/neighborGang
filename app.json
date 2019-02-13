@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/lifeTab/notice/notice",
     "pages/lifeTab/life/life",
+    "pages/lifeTab/notice/notice",
     "pages/sportTab/sport/sport",
     "pages/sportTab/runRecord/runRecord",
     "pages/sportTab/runActivity/runActivity",
@@ -19,7 +19,9 @@
     "pages/personalTab/teamShare/teamShare",
     "pages/personalTab/myShare/myShare",
     "pages/personalTab/aboutUs/aboutUs",
-    "pages/personalTab/information/information"
+    "pages/personalTab/information/information",
+    "pages/lifeTab/noticeLaunch/noticeLaunch",
+    "pages/lifeTab/shopLaunch/shopLaunch"
   ],
   "tabBar": {
     "color": "#8C8C8C",
@@ -33,12 +35,14 @@
         "text": "跑团",
         "iconPath": "images/common/sport.png",
         "selectedIconPath": "images/common/sport_selected.png"
-      }, {
+      },
+      {
         "pagePath": "pages/lifeTab/life/life",
         "text": "邻居生活",
         "iconPath": "images/common/life.png",
         "selectedIconPath": "images/common/life_selected.png"
-      }, {
+      },
+      {
         "pagePath": "pages/personalTab/personal/personal",
         "text": "我的",
         "iconPath": "images/common/personal.png",

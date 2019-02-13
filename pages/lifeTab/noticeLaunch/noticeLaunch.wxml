@@ -1,0 +1,17 @@
+<!--pages/lifeTab/noticeLaunch/noticeLaunch.wxml-->
+<view class="wrap">
+    
+    <!-- 添加公告图片 -->
+    <text class="title">添加公告图片</text>
+    <view class="photos">
+        <block wx:for="{{[1,2]}}">
+            <image class="photo" src="/images/demo/0.jpg" />>
+        </block>
+        <view class="add flex-center">
+            <image src="/images/life/addNoticePhoto.png" bind:tap="addPhoto"/>
+        </view>
+    </view>
+
+    <input class="notice" value="{{notice}}" placeholder="公告内容" bind:change="bindNotice" />
+
+</view>

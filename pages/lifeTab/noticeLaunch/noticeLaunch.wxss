@@ -1,0 +1,22 @@
+/* pages/lifeTab/noticeLaunch/noticeLaunch.wxss */
+
+.title {
+    height: 60rpx;
+    color: #1A1A1A;
+    font-size: 28rpx;
+    line-height: 70rpx;
+    margin-right: 20rpx;
+}
+
+.photos {
+    width: 710rpx;
+    padding: 0 20rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 200rpx;
+    height: 200rpx;
+}

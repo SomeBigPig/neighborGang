@@ -1,5 +1,5 @@
-// pages/lifeTab/notice/notice.js
-// 邻居生活-公告栏
+// pages/lifeTab/noticeLaunch/noticeLaunch.js
+// 邻居生活-公告栏-发布公告
 
 Page({
 
@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    notice: ''
   },
 
   /**
@@ -30,12 +30,28 @@ Page({
   onShow: function () {
 
   },
-
-  // 发布公告
-  toNoticeLaunch: function() {
-    wx.navigateTo({
-      url: '/pages/lifeTab/noticeLaunch/noticeLaunch',
+  
+  // 添加公告图片
+  addPhoto: function() {
+    wx.chooseImage({
+      count: 9,
+      success: (result)=>{
+        console.log(result)
+      },
+      fail: ()=>{
+        wx.showToast({
+          title: '添加图片失败...',
+          icon: 'none',
+        });
+      },
     });
+  },
+
+  // 输入公告
+  bindNotice: function(e) {
+    this.setData({
+      notice: e.detail.value
+    })
   },
 
   /**

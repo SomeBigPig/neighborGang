@@ -8,7 +8,7 @@
 .notice {
   width: 710rpx;
   padding: 20rpx 20rpx;
-  border-bottom: 1rpx#F2F2F2 solid;
+  border-bottom: 1rpx #F2F2F2 solid;
   justify-content: flex-start;
 }
 
@@ -24,10 +24,10 @@
 }
 
 .photos image {
-  width: 230rpx;
-  height: 160rpx;
+  width: 220rpx;
+  height: 220rpx;
   border-radius: 10rpx;
-  margin-left: 10rpx;
+  margin-left: 20rpx;
   margin-top: 20rpx;
 }
 
@@ -59,4 +59,27 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.footer {
+  width: 750rpx;
+  height: 110rpx;
+  background-color: #FFF;
+  border-top: 1rpx #F2F2F2 solid;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.launch {
+  width: 710rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  background-color: #4CAF50;
+  color: #FFF;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  text-align: center;
+  position: relative;
+  top: 20rpx;
 }

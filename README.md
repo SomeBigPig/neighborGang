@@ -1,2 +1,3 @@
-# minprogram-basicproject
-小程序基础工程
+# neighborGang
+邻居帮小程序
+    为社区打造，集跑步记录，运动活动组织，邻居生活服务，社区店铺宣传为一体的社交类小程序
